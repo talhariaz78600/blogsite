@@ -27,8 +27,8 @@ import "../assets/css/component-card.css"
 import Headernav from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 export const metadata = {
-  title: "Revolution",
-  description: "The purpose of this application is provide services to clients",
+  title: "Guest Glow",
+  description: "The purpose of this application is provide context",
 };
 export default function RootLayout({ children }) {
   return (

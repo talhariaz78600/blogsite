@@ -12,7 +12,7 @@ const Headernav = () => {
   const Onsearch = (e) => {
     setTimeout(() => {
       router.push(`${data}?search=${e.target.value}`)
-    }, 4000);
+    }, 3000);
   }
 
   return (
@@ -73,17 +73,17 @@ const Headernav = () => {
                 <li><Link href="/category/Entertainment/1" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
                   <span className={`${data === "/category/Entertainment/1" ? "header__active-menu-item" : ""}`}>ENTERTAINMENT</span>
                 </Link></li>
-                <li><Link href="/category/Crypto" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
+                <li><Link href="/category/Crypto/1" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
                   <span className={`${data === "/category/Crypto/1" ? "header__active-menu-item" : ""}`}>CRYPTO</span>
                 </Link></li>
                 <li><Link href="/category/Casino/1" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
                 <span className={`${data === "/category/Casino/1" ? "header__active-menu-item" : ""}`}>CASINO</span>
               </Link></li>
-              <li><Link href="/category/Abode/1" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
-                <span className={`${data === "/category/Abode/1" ? "header__active-menu-item" : ""}`}>ADOBE</span>
+              <li><Link href="/category/Fashion/1" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
+                <span className={`${data === "/category/Fashion/1" ? "header__active-menu-item" : ""}`}>FASHION</span>
               </Link></li>
-              <li><Link href="/category/Cbc/1" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
-                <span className={`${data === "/category/Cbc/1" ? "header__active-menu-item" : ""}`}>CBC</span>
+              <li><Link href="/category/CBD/1" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
+                <span className={`${data === "/category/CBD/1" ? "header__active-menu-item" : ""}`}>CBD</span>
               </Link></li>
 
               <li><Link href="/category/E-Commerce/1" className="header__menu-item header__menu-item list-menu__item link link--text focus-inset">
@@ -123,19 +123,20 @@ const Headernav = () => {
                 <li><Link href="/category/Entertainment/1" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
                   <span className={`${data === "/category/Entertainment/1" ? "header__active-menu-item" : ""}`}>ENTERTAINMENT</span>
                 </Link></li>
-                <li><Link href="/category/Crypto" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
+                <li><Link href="/category/Crypto/1" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
                   <span className={`${data === "/category/Crypto/1" ? "header__active-menu-item" : ""}`}>CRYPTO</span>
                 </Link></li>
                 <li><Link href="/category/Casino/1" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
                 <span className={`${data === "/category/Casino/1" ? "header__active-menu-item" : ""}`}>CASINO</span>
               </Link></li>
-              <li><Link href="/category/Abode/1" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
-                <span className={`${data === "/category/Abode/1" ? "header__active-menu-item" : ""}`}>ADOBE</span>
-              </Link></li>
-              <li><Link href="/category/Cbc/1" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
-                <span className={`${data === "/category/Cbc/1" ? "header__active-menu-item" : ""}`}>CBC</span>
+             
+              <li><Link href="/category/CBD/1" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
+                <span className={`${data === "/category/CBD/1" ? "header__active-menu-item" : ""}`}>CBD</span>
               </Link></li>
 
+              <li><Link href="/category/Fashion/1" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
+                <span className={`${data === "/category/Fashion/1" ? "header__active-menu-item" : ""}`}>FASHION</span>
+              </Link></li>
               <li><Link href="/category/E-Commerce/1" className="menu-drawer__menu-item list-menu__item link link--text focus-inset">
                 <span className={`${data === "/category/E-Commerce/1" ? "header__active-menu-item" : ""}`}>E COMMERCE</span>
               </Link></li></ul>
@@ -147,12 +148,12 @@ const Headernav = () => {
         </div>
       )}
 
-      <section className="bg-indigo-dark px-5 md:px-35 h-50">
+     {data!=="/not-found"?<section className="bg-indigo-dark px-5 md:px-35 h-50">
         <div className="container mx-auto py-8">
           <input onChange={Onsearch} className="w-full h-20 border-2 hover:border-blue-600  rounded mb-8 text-black focus:outline-none focus:shadow-outline text-[25PX] px-12 shadow-lg" type="search" placeholder="Search..." />
 
         </div>
-      </section>
+      </section>:""}
     </nav>
   );
 };
