@@ -28,7 +28,7 @@ import Headernav from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 export const metadata = {
   title: "Guest Glow",
-  description: "The purpose of this application is provide context",
+  description: "Guest Glow is your go-to destination for the latest updates across a variety of categories including NEWS, EDUCATION, SPORTS, HEALTH, BUSINESS, ENTERTAINMENT, CRYPTO, CASINO, FASHION, CBD, and E-COMMERCE. Stay informed with insightful articles, expert opinions, and engaging content, all designed to keep you ahead in today's fast-paced world",
 };
 export default function RootLayout({ children }) {
   return (

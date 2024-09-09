@@ -149,8 +149,8 @@ const Headernav = () => {
       )}
 
      {data!=="/not-found"?<section className="bg-indigo-dark px-5 md:px-35 h-50">
-        <div className="container mx-auto py-8">
-          <input onChange={Onsearch} className="w-full h-20 border-2 hover:border-blue-600  rounded mb-8 text-black focus:outline-none focus:shadow-outline text-[25PX] px-12 shadow-lg" type="search" placeholder="Search..." />
+        <div className="container mx-auto py-8 flex justify-center">
+          <input onChange={Onsearch} className="w-[90%] md:w-[70%] h-20 border-2 hover:border-blue-600  rounded mb-8 text-black focus:outline-none focus:shadow-outline text-[25PX] px-12 shadow-lg" type="search" placeholder="Search..." />
 
         </div>
       </section>:""}

@@ -8,10 +8,12 @@ const Footer = () => {
                     <div className="footer__content-top page-width">
                         <div className="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet grid--3-col-tablet">
                             <div className="footer-block grid__item">
-                                <div className="footer-block__details-content footer-block-image "><img
-                                    srcSet="//www.revolutionmining.io/cdn/shop/files/Revolution_Mining_-_white_200x.png?v=1679084013, //www.revolutionmining.io/cdn/shop/files/Revolution_Mining_-_white_200x@2x.png?v=1679084013 2x"
-                                    src="//www.revolutionmining.io/cdn/shop/files/Revolution_Mining_-_white_400x.png?v=1679084013"
-                                    alt="" loading="lazy" width="1005" height="191"  style={{ maxWidth: "min(100%, 200px)" }}/>
+                                <div className="footer-block__details-content footer-block-image ">
+                                    <div className="flex flex-col items-start py-4">
+                                        <Link href="/" className="font-bold text-gray-100 uppercase hover:text-gray-700 text-5xl">
+                                            Guest Glow
+                                        </Link>
+                                    </div>
                                 </div>
                             </div>
                             <div className="footer-block grid__item">
@@ -27,9 +29,10 @@ const Footer = () => {
                             <div className="footer-block grid__item">
                                 <div className="footer-block__details-content rte">
                                     <p></p>
-                                    <p className='my-5'><strong>Call or Text us: </strong>213-534-6525</p>
-                                    <p className='my-5'><strong>Email us: </strong>team@revolutionmining.io</p>
-                                    <p className='my-5'><strong>Hours:</strong><br />Mon–Fri: 8am-6pm PST<br />Sat-Sun: Closed</p>
+                                    <p className='my-5'><strong>Call or Text us: </strong>+923472916962</p>
+                                    <p className='my-5'><strong>Email us: </strong>muhammadtalha1005@gmail.com</p>
+                                 
+                                    
                                 </div>
                             </div>
                             <div className="footer-block grid__item">
@@ -45,29 +48,12 @@ const Footer = () => {
                                             Terms of Service
                                         </Link>
                                     </li>
-                                    <li>
-                                        <Link href="/pages/terms-of-service"
-                                            className="link link--text list-menu__item list-menu__item--link">
-                                            Hosting Agreement
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/pages/terms-of-service"
-                                            className="link link--text list-menu__item list-menu__item--link">
-                                            Purchase Agreement
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/pages/terms-of-service"
-                                            className="link link--text list-menu__item list-menu__item--link">
-                                            Refund Policy
-                                        </Link>
-                                    </li>
+
                                 </ul>
                             </div>
                             <div className="footer-block grid__item">
                                 <ul className="footer__list-social list-unstyled list-social" role="list">
-                                    <li className="list-social__item">
+                                    {/* <li className="list-social__item">
                                         <Link rel="nofollow" href="https://twitter.com/RevolMining"
                                             className="link list-social__link"><svg aria-hidden="true" focusable="false"
                                                 role="presentation" className="icon icon-twitter" viewBox="0 0 18 15">
@@ -76,7 +62,7 @@ const Footer = () => {
                                             </svg>
                                             <span className="visually-hidden1">Twitter</span>
                                         </Link>
-                                    </li>
+                                    </li> */}
                                     <li className="list-social__item">
                                         <Link rel="nofollow" href="https://www.facebook.com/RevolMining"
                                             className="link list-social__link"><svg aria-hidden="true" focusable="false"
@@ -94,7 +80,7 @@ const Footer = () => {
                                                 <path fill="currentColor"
                                                     d="M8.77 1.58c2.34 0 2.62.01 3.54.05.86.04 1.32.18 1.63.3.41.17.7.35 1.01.66.3.3.5.6.65 1 .12.32.27.78.3 1.64.05.92.06 1.2.06 3.54s-.01 2.62-.05 3.54a4.79 4.79 0 01-.3 1.63c-.17.41-.35.7-.66 1.01-.3.3-.6.5-1.01.66-.31.12-.77.26-1.63.3-.92.04-1.2.05-3.54.05s-2.62 0-3.55-.05a4.79 4.79 0 01-1.62-.3c-.42-.16-.7-.35-1.01-.66-.31-.3-.5-.6-.66-1a4.87 4.87 0 01-.3-1.64c-.04-.92-.05-1.2-.05-3.54s0-2.62.05-3.54c.04-.86.18-1.32.3-1.63.16-.41.35-.7.66-1.01.3-.3.6-.5 1-.65.32-.12.78-.27 1.63-.3.93-.05 1.2-.06 3.55-.06zm0-1.58C6.39 0 6.09.01 5.15.05c-.93.04-1.57.2-2.13.4-.57.23-1.06.54-1.55 1.02C1 1.96.7 2.45.46 3.02c-.22.56-.37 1.2-.4 2.13C0 6.1 0 6.4 0 8.77s.01 2.68.05 3.61c.04.94.2 1.57.4 2.13.23.58.54 1.07 1.02 1.56.49.48.98.78 1.55 1.01.56.22 1.2.37 2.13.4.94.05 1.24.06 3.62.06 2.39 0 2.68-.01 3.62-.05.93-.04 1.57-.2 2.13-.41a4.27 4.27 0 001.55-1.01c.49-.49.79-.98 1.01-1.56.22-.55.37-1.19.41-2.13.04-.93.05-1.23.05-3.61 0-2.39 0-2.68-.05-3.62a6.47 6.47 0 00-.4-2.13 4.27 4.27 0 00-1.02-1.55A4.35 4.35 0 0014.52.46a6.43 6.43 0 00-2.13-.41A69 69 0 008.77 0z" />
                                                 <path fill="currentColor"
-                                                    d="M8.8 4a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 7.43a2.92 2.92 0 110-5.85 2.92 2.92 0 010 5.85zM13.43 5a1.05 1.05 0 100-2.1 1.05 1.05 0 000 2.1z"/>
+                                                    d="M8.8 4a4.5 4.5 0 100 9 4.5 4.5 0 000-9zm0 7.43a2.92 2.92 0 110-5.85 2.92 2.92 0 010 5.85zM13.43 5a1.05 1.05 0 100-2.1 1.05 1.05 0 000 2.1z" />
                                             </svg>
                                             <span className="visually-hidden1">Instagram</span>
                                         </Link>
