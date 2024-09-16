@@ -1,7 +1,6 @@
 import React from 'react';
 import { redirect } from 'next/navigation';
 import BlogDetail from '@/components/blog/Blogdetail';
-
 export async function generateMetadata({ params }) {
   const { blogId } = params;
 9

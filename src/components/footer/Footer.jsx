@@ -64,7 +64,7 @@ const Footer = () => {
                                         </Link>
                                     </li> */}
                                     <li className="list-social__item">
-                                        <Link rel="nofollow" href="https://www.facebook.com/RevolMining"
+                                        <Link rel="nofollow" href="https://web.facebook.com/profile.php?id=100092340407059"
                                             className="link list-social__link"><svg aria-hidden="true" focusable="false"
                                                 role="presentation" className="icon icon-facebook" viewBox="0 0 18 18">
                                                 <path fill="currentColor"
@@ -74,7 +74,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className="list-social__item">
-                                        <Link rel="nofollow" href="https://www.instagram.com/revolutionmining"
+                                        <Link rel="nofollow" href="https://www.instagram.com/cruxhometutor/"
                                             className="link list-social__link"><svg aria-hidden="true" focusable="false"
                                                 role="presentation" className="icon icon-instagram" viewBox="0 0 18 18">
                                                 <path fill="currentColor"
@@ -86,7 +86,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li className="list-social__item">
-                                        <Link rel="nofollow" href="https://t.me/revolution_mining_official"
+                                        <Link rel="nofollow" href="https://whatsapp.com/channel/0029VaQQRWg4IBh6quYf5513"
                                             className="link list-social__link"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
                                                 aria-hidden="true" focusable="false" role="presentation" className="icon icon-arrow"
                                                 viewBox="0 0 12.537 10.562">
@@ -100,7 +100,7 @@ const Footer = () => {
                                                 <path id="Tracciato_150" data-name="Tracciato 150"
                                                     d="M96.724,588.765l-11.466,4.468a.418.418,0,0,0,.033.79l2.914.86,1.087,3.45a.5.5,0,0,0,.835.2L91.634,597l2.956,2.17a.617.617,0,0,0,.969-.371l1.958-9.359a.59.59,0,0,0-.792-.67Zm-1.437,2.077-5.326,4.71a.286.286,0,0,0-.095.182l-.2,1.823a.055.055,0,0,1-.108.01l-.844-2.718a.286.286,0,0,1,.123-.328l6.289-3.9a.139.139,0,0,1,.165.222Zm0,0"
                                                     transform="translate(-84.992 -588.724)" fill="url(#linear-gradient)" />
-                                            </svg><span className="visually-hidden1">Telegram</span>
+                                            </svg><span className="visually-hidden1">Whatsapp</span>
                                         </Link>
                                     </li>
                                 </ul>

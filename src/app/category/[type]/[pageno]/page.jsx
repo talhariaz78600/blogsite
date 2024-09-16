@@ -32,7 +32,7 @@ const page = async (context) => {
 
   const blogdata = async () => {
     if (!context.searchParams.search || context.searchParams.search === "") {
-      const response = await fetch(`https://seobackend-seven.vercel.app/api/blog/getblogdata/${type}?page=${pageno}&limit=${4}`, {
+      const response = await fetch(`https://seobackend-seven.vercel.app/api/blog/getblogdata/${type}?page=${pageno}&limit=${10}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json"

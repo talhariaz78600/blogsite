@@ -19,25 +19,22 @@ const Headernav = () => {
     <nav className={`${menuOpen ? "z-50 fixed h-screen" : ""} bg-black w-full shadow-lg `}>
       <div className="w-full  md:px-35 px-5 py-5">
       <nav className="w-full py-4 bg-black shadow">
-        <div className="w-full container mx-auto flex flex-wrap items-center justify-between">
+        <div className="md:w-full lg:w-[1100px] container mx-auto flex flex-wrap items-center justify-between">
           <nav>
             <ul className="flex items-center justify-between font-bold text-sm text-white uppercase no-underline">
               <li><Link href="/" className="hover:text-gray-200 hover:underline px-4">Home</Link></li>
-              <li><Link href="/about" className="hover:text-gray-200 hover:underline px-4">About</Link></li>
+       
             </ul>
           </nav>
 
           <div className="flex items-center text-[16px] no-underline text-white pr-6">
-            <a className="" href="#">
+            <a className="" href="https://web.facebook.com/profile.php?id=100092340407059">
               <i className="fab fa-facebook"></i>
             </a>
-            <a className="pl-6" href="#">
+            <a className="pl-6" href=" https://www.instagram.com/cruxhometutor/">
               <i className="fab fa-instagram"></i>
             </a>
-            <a className="pl-6" href="#">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a className="pl-6" href="#">
+            <a className="pl-6" href="https://www.linkedin.com/in/muhammad-talha-riaz-23779423b/">
               <i className="fab fa-linkedin"></i>
             </a>
           </div>

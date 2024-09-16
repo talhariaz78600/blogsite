@@ -10,5 +10,7 @@ export default function HomePage() {
     router.push("/category/News/1");
   }, [router]);
 
-  return null; // Optionally show a loading spinner or message here
+  return (<>
+  <div className="loader"></div>
+  </>); 
 }
