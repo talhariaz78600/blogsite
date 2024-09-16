@@ -1,11 +1,10 @@
 import React from 'react';
 import { redirect } from 'next/navigation';
-import BlogDetail from '@/components/blog/BlogDetail';
+import BlogDetail from '@/components/blog/Blogdetail';
 
 export async function generateMetadata({ params }) {
   const { blogId } = params;
-  
-  // Fetch the blog data for generating metadata
+9
   const response = await fetch(`https://seobackend-seven.vercel.app/api/blog/getsingleblog/${blogId}`, {
     method: "GET",
     headers: {
@@ -44,12 +43,10 @@ export async function generateMetadata({ params }) {
   };
 }
 
-// Page component that fetches data and renders the blog detail
 const BlogPage = async ({ params, searchParams }) => {
   const { blogId } = params;
   const { pageno } = searchParams;
 
-  // Fetch the blog data
   const response = await fetch(`https://seobackend-seven.vercel.app/api/blog/getsingleblog/${blogId}`, {
     method: "GET",
     headers: {
@@ -70,7 +67,6 @@ const BlogPage = async ({ params, searchParams }) => {
 
   return (
     <div>
-      {/* Render the BlogDetail component with fetched data */}
       <BlogDetail data={data} id={blogId} pageno={pageno} />
     </div>
   );
